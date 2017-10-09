@@ -1,0 +1,50 @@
+<div class="row top-pane">
+    <h2 class="col-lg-11 col-md-10 col-sm-10 col-xs-6">Playing {{target_score}}</h2>
+</div>
+<!-- Playing mode display -->
+<div *ngIf="!winner" class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 cl-xs-6">
+        <div class="top-pane">
+            <h2><strong>{{ current_player.name }}</strong> is playing</h2>
+        </div>
+        <div>
+            <p>New onslaught</p>
+            <input [(ngModel)]="new_score" placeholder="onslaught's score"/>
+            <button (click)="mark_current_onslaught()">👍ok</button>
+            <span class="text-danger">{{score_error}}</span>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 cl-xs-6">
+        <div class="top-pane">
+            <h2>Scores:</h2>
+        </div>
+        <div>
+            <ul>
+                <li *ngFor="let player_score of scores | values">
+                    <span>{{ player_score.name }}</span> - {{player_score.score}} pts.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Adapt Quit button spot according to display mode -->
+    <div class="container">
+        <a routerLink="/players" class="btn btn-danger quit-btn">Quit</a>
+    </div>
+</div>
+
+<!-- Game won splash -->
+<div *ngIf="winner" class="container-fluid">
+    <div class="row congratulation-splash">
+        <p>🎉🎊 Congrats 🎊🎉</p>
+        <p>
+         ✨{{ winner.name }} ✨
+        </p>
+    </div>
+    <div class="row">
+        <a routerLink="/players" class="btn btn-danger quit-btn col-xs-6">Quit</a>
+        <button (click)="retry()" class="btn btn-success col-xs-6">Play again</button>
+    </div>
+</div>
+
+

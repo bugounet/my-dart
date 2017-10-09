@@ -1,0 +1,36 @@
+<div class="row top-pane">
+    <div class="col-lg-11 col-md-10 col-sm-10 col-xs-6">
+        <h2>Select players</h2>
+    </div>
+    <!-- Don't let user go to game-mode selection until you have at least two players-->
+    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-6">
+        <a routerLink="/mode" class="btn btn-primary" *ngIf="players.length >= 2">Next</a>
+    </div>
+</div>
+
+<!-- Display loading message until you got already-existing players from
+remote server-->
+<div class="row" *ngIf="loading" >Loading...</div>
+<!-- then let him add players -->
+<div class="row" *ngIf="! loading">
+
+    <!-- Player adding form-->
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left-pane">
+        <h3>New player</h3>
+        <label>name: </label>
+        <input [(ngModel)]="new_player_name" placeholder="name">
+        <button (click)="add_player()" [ngClass]="{'btn':true, 'disabled': !new_player_name.length, 'btn-primary': true}">🤘 Add</button>
+        <span class="text-danger">{{player_name_error}}</span>
+    </div>
+
+
+    <!-- already added players -->
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-pane">
+        <h3>Players</h3>
+        <ul>
+            <li *ngFor="let player of players">
+                {{player.name}} ( {{player.id}} )
+            </li>
+        </ul>
+    </div>
+</div>

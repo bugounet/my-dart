@@ -1,0 +1,19 @@
+.game-mode-btn {
+    padding:30px;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size: 2em;
+}
+
+.game-mode-101 {
+    background-color: #039be5;
+}
+
+.game-mode-301 {
+    background-color: #187bc4;
+}
+
+.game-mode-501 {
+    background-color: #336699;
+}

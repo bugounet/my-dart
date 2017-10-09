@@ -1,0 +1,40 @@
+.idea
+.DS_Store
+# ignore transpiled files like JS sources or MAP files
+my-dart/src/**/*.js
+my-dart/src/**/*.js.map
+
+
+(standard input):9:	new file:       my-dart/.angular-cli.json
+(standard input):15:	new file:   my-dart/e2e/tsconfig.e2e.json
+(standard input):16:	new file:   my-dart/karma.conf.js
+(standard input):17:	new file:   my-dart/package-lock.json
+(standard input):18:	new file:   my-dart/package.json
+(standard input):19:	new file:   my-dart/protractor.conf.js
+(standard input):22:	new file:   my-dart/src/app/app.component.js
+(standard input):23:	new file:   my-dart/src/app/app.component.js.map
+(standard input):26:	new file:   my-dart/src/app/app.module.js
+(standard input):27:	new file:   my-dart/src/app/app.module.js.map
+(standard input):31:	new file:   my-dart/src/app/components/game/game.component.js
+(standard input):32:	new file:   my-dart/src/app/components/game/game.component.js.map
+(standard input):36:	new file:   my-dart/src/app/components/game_selection/game_selection.component.js
+(standard input):37:	new file:   my-dart/src/app/components/game_selection/game_selection.component.js.map
+(standard input):41:	new file:   my-dart/src/app/components/players/players.component.js
+(standard input):42:	new file:   my-dart/src/app/components/players/players.component.js.map
+(standard input):44:	new file:   my-dart/src/app/models/player.model.js
+(standard input):45:	new file:   my-dart/src/app/models/player.model.js.map
+(standard input):47:	new file:   my-dart/src/app/pipe.module.js
+(standard input):48:	new file:   my-dart/src/app/pipe.module.js.map
+(standard input):50:	new file:   my-dart/src/app/services/game.service.js
+(standard input):51:	new file:   my-dart/src/app/services/game.service.js.map
+(standard input):53:	new file:   my-dart/src/app/services/player.service.js
+(standard input):54:	new file:   my-dart/src/app/services/player.service.js.map
+(standard input):65:	new file:   my-dart/src/tsconfig.app.json
+(standard input):66:	new file:   my-dart/src/tsconfig.spec.json
+(standard input):68:	new file:   my-dart/tsconfig.json
+(standard input):69:	new file:   my-dart/tslint.json
+
+
+
+
+git reset my-dart/src/app/app.component.js my-dart/src/app/app.component.js.map my-dart/src/app/app.module.js my-dart/src/app/app.module.js.map my-dart/src/app/components/game/game.component.js my-dart/src/app/components/game/game.component.js.map my-dart/src/app/components/game_selection/game_selection.component.js my-dart/src/app/components/game_selection/game_selection.component.js.map my-dart/src/app/components/players/players.component.js my-dart/src/app/components/players/players.component.js.map my-dart/src/app/models/player.model.js my-dart/src/app/models/player.model.js.map my-dart/src/app/pipe.module.js my-dart/src/app/pipe.module.js.map my-dart/src/app/services/game.service.js my-dart/src/app/services/game.service.js.map my-dart/src/app/services/player.service.js my-dart/src/app/services/player.service.js.map
